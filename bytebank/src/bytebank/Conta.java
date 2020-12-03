@@ -1,10 +1,10 @@
 package bytebank;
 
 public class Conta {
-	double saldo;
-	int agencia;
-	int numero;
-	String titular;
+	private double saldo;
+	private int agencia;
+	private int numero;
+	private String titular;
 	
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -28,4 +28,13 @@ public class Conta {
 			return false;
 		}
 	}
+	
+	public double getSaldo() {
+		return this.saldo;
+	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo += saldo;
+	}
+	
 }
