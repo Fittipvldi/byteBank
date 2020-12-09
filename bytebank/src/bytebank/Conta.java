@@ -6,6 +6,13 @@ public class Conta {
 	private int numero;
 	private String titular;
 	
+	// construtor padrão
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+	}
+	
+	
 	public void deposita(double valor) {
 		this.saldo += valor;
 	}
@@ -37,4 +44,31 @@ public class Conta {
 		this.saldo += saldo;
 	}
 	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public void setAgencia(int agencia) {
+		
+		if(agencia <= 0) {
+			System.out.println("Não é possível a numeração ser menor ou igual a zero.");
+			return;
+		}
+		
+		this.agencia = agencia;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public void setNumero(int numero) {
+		
+		if(numero <= 0) {
+			System.out.println("Não é possível a numeração ser menor ou igual a zero.");
+			return;
+		}
+		
+		this.numero = numero;
+	}
 }

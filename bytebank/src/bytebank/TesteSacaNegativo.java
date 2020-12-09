@@ -3,7 +3,7 @@ package bytebank;
 public class TesteSacaNegativo {
 
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		Conta conta = new Conta(56234, 446515);
 		conta.deposita(100);
 		conta.saca(200);
 		System.out.println(conta.getSaldo());

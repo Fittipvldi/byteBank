@@ -2,7 +2,7 @@ package bytebank;
 
 public class CriarConta {
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta();
+        Conta primeiraConta = new Conta(13378 , 542164);
         primeiraConta.setSaldo(200);
         System.out.println(primeiraConta.getSaldo());
 
