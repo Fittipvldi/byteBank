@@ -1,2 +1,2 @@
-# javaPOO
+# byteBank
 Exercícios POO em Java.
