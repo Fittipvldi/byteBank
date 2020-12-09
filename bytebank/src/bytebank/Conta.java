@@ -5,11 +5,13 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private String titular;
+	private static int total; //atributo referente a classe 
 	
 	// construtor padrão
 	public Conta(int agencia, int numero) {
 		this.agencia = agencia;
 		this.numero = numero;
+		total++;
 	}
 	
 	
@@ -70,5 +72,9 @@ public class Conta {
 		}
 		
 		this.numero = numero;
+	}
+	
+	public static int getTotal() { //metodo da classe
+		return Conta.total;
 	}
 }
